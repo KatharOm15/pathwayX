@@ -8,7 +8,7 @@ const Roadmap = () => {
   const [error, setError] = useState(null);
 
   const USER_ID = localStorage.getItem("userId");
-  const API_URL = `http://localhost:5000/api/roadmap/${USER_ID}`;
+  const API_URL = `https://pathwayx.onrender.com/api/roadmap/${USER_ID}`;
 
   useEffect(() => {
     const fetchRoadmap = async () => {

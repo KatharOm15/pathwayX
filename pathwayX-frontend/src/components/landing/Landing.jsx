@@ -83,7 +83,7 @@ const FirstStepAI = () => {
 
       // Send user data to backend
       const response = await axios.post(
-        "http://localhost:5000/api/auth",
+        "https://pathwayx.onrender.com/api/auth",
         userData
       );
       const serverUser = response.data.user;

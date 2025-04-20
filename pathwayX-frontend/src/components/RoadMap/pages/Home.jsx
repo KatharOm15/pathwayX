@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     const fetchRoadmaps = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/roadmap/last-three/${userId}`);
+        const response = await axios.get(`https://pathwayx.onrender.com/api/roadmap/last-three/${userId}`);
         setRoadmaps(response.data);
         setError(false);
       } catch (error) {
